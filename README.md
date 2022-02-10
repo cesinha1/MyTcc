@@ -1,2 +1,2 @@
-# MyTcc
-Meu TCC do técnico em informática
+# Keytosh
+Projeto para realização de empréstimos de objetos.

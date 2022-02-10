@@ -1,0 +1,47 @@
+[33mcommit 49fd87b6fbb25f6fb69f630f1e5799ed8700a4cc[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: cesar <cesardepaula80@gmail.com>
+Date:   Wed Sep 2 18:02:51 2020 -0300
+
+    cadastro de objetos implementado com ajax e modal. corrigido cadastro de usuário
+
+[33mcommit 35fe1b3514cf290fab6c88aafaa349185879af25[m
+Author: cesar <cesardepaula80@gmail.com>
+Date:   Wed May 13 18:28:58 2020 -0300
+
+    Tela de emprestimo criada em HTML
+
+[33mcommit 4a42a1e183a4e1363e1a19dac88650a3a6c31e1d[m
+Author: cesar <cesardepaula80@gmail.com>
+Date:   Mon May 11 15:14:23 2020 -0300
+
+    alteraçao no visual/css e bosstrap
+
+[33mcommit 70b3387d89012bdd2048b70b424ac6fa92859e10[m
+Author: cesar <cesardepaula80@gmail.com>
+Date:   Mon May 11 15:07:10 2020 -0300
+
+    ProcessaAluno
+
+[33mcommit c8c8ff2877307fcf23206c77187852f6e4961a2f[m
+Author: Lewis <lewis.fsantos@gmail.com>
+Date:   Thu May 7 22:40:32 2020 -0300
+
+    Remoção do arquivo README-DEV.md
+
+[33mcommit fa0e4112aa4464903a69b5a92f1d128fd3f7ff0a[m
+Author: Lewis <lewis.fsantos@gmail.com>
+Date:   Thu May 7 22:36:24 2020 -0300
+
+    Modificado nome do arquivo README-DEV.md para README.md
+
+[33mcommit 365a19e397ac0f106bfa93bcd44da4b5346030db[m
+Author: Lewis <lewis.fsantos@gmail.com>
+Date:   Thu May 7 22:26:31 2020 -0300
+
+    Adição do arquivo de README-DEV
+
+[33mcommit b67b14e8b270f0c8d63561c4a32ce311bebb0d9f[m
+Author: Lewis <lewis.fsantos@gmail.com>
+Date:   Thu May 7 22:07:09 2020 -0300
+
+    Primeiro commit
