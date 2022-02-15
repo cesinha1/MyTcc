@@ -236,21 +236,20 @@ section {
       </thead>
       <tbody>
         
-        
-          <?php 
-          while($exibirRegistros = mysqli_fetch_array($consulta)){
-            $idEmprestimo = $exibirRegistros[0];
-            $idUsuario = $exibirRegistros[1];
-            $dataEmprestimo = $exibirRegistros[2];
-            $dataDevolucao = $exibirRegistros[3];
-          
+      <?php
+        while($exibirRegistros = mysqli_fetch_array($consulta)){
+          $idEmprestimo = $exibirRegistros[0];
+          $idUsuario = $exibirRegistros[1];
+          $dataEmprestimo = $exibirRegistros[2];
+          $dataDevolucao = $exibirRegistros[3];
+        ?>
+        <tr>
+          <!--<th id="hidden" scope="row"><?php echo $idEmprestimo; 
           $sql = "SELECT * FROM usuario WHERE idUsuario = '$idUsuario'";
           $query1 = mysqli_query($conexao,$sql);
           $resgist = mysqli_num_rows($query1);    
-          
           while($exibirRegistros1 = mysqli_fetch_array($query1)){
             $nomeUsuario = $exibirRegistros1[1];
-          
 
             $sqlcaptureidobj = "SELECT * FROM objetoemprestimo WHERE idEmprestimo = '$idEmprestimo'";
             $queryIdEmprestimo = mysqli_query($conexao,$sqlcaptureidobj);
@@ -258,7 +257,7 @@ section {
             
             while($exibirObjEmp = mysqli_fetch_array($queryIdEmprestimo)){
               $idObj = $exibirObjEmp[1];
-            
+            }
 
             $sqlCaptureNomeObj = "SELECT * FROM objeto WHERE idObjeto = '$idObj'";
             $queryNomeObj = mysqli_query($conexao,$sqlCaptureNomeObj);
@@ -266,25 +265,22 @@ section {
             
             while($exibirNomeObj = mysqli_fetch_array($queryNomeObj)){
               $nomeObj = $exibirNomeObj[1];
-            
-          
+            }
+          }
 
-          ?>
-          <tr>
-           <td><?php echo $idEmprestimo; ?></td>
+          ?></>-->
+          <td><?php echo $idEmprestimo; ?></td>
           <td><?php echo $nomeUsuario; ?></td>
           <td><?php echo $nomeObj; ?></td>
           <td><?php echo $dataEmprestimo; ?></td>
-          <td><?php echo $dataDevolucao; ?></td>
-          <td><button class="btn-devolver" onclick="modalDevolver()">Devolver</button></td>   
+          <td><?php echo $dataDevolucao; ?></td>   
+          <td><button class="btn-devolver" onclick='modalDevolver(<?php echo "$idEmprestimo" ?>)'>Devolver</button></td>
         </tr>
 
-      <?php
-            } 
-          }
-          }
-          }
-      ?>
+
+      <?php }  
+        mysqli_close($conexao);
+      ?> 
       
     </table>
   </div>
@@ -298,7 +294,7 @@ section {
     <p class="modal-style2">Você não poderá reverter isso!</p>
       <form action="processa_devolver.php" method="POST" id="validacao1">
         <input type="text" name="idEmprestimo" value="<?php echo "$idEmprestimo"; ?>" id="idEmp">
-        <center><button type="submit" name="excluir" class="btn-sucesso" onclick='devolverObj(<?php echo $idEmprestimo; ?>)'>Sim, exclua!</button>
+        <center><button type="submit" name="devolver" class="btn-sucesso">Sim, exclua!</button>
         <button class="btn-cancelar" onclick="closeModalFechar()">Cancelar</button></center>
       </form>
   </div>    
@@ -328,10 +324,9 @@ var modal2 = document.getElementById("myModal2");
 function closeModalFechar() {
   window.location.href = 'devolucao.php';
 }
-function devolverObj(idEmprestimo) {
-  $("#idEmp").val(idEmprestimo); 
-}
-function modalDevolver(){
+
+function modalDevolver(idEmprestimo){
+  $("#idEmp").val(idEmprestimo);
   modal2.style.display = "block";
 }
 </script>

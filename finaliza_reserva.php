@@ -2,19 +2,19 @@
 include_once("conexao.php");
  
     $resultAllQueries = false;
-    // decodificando a string json correspondente ao objeto empréstimo
+    // decodiWficando a string json correspondente ao objeto empréstimo
     $objetoEmpDecode = json_decode($_POST['objEmp'], true); 
     
     // pegando o id do Usuário
-    
+    $idUsuario = $objetoEmpDecode['idUsuario'];
 
     // pegando os objetos 
     $objetos = $objetoEmpDecode['objetos'];
 
     // Para pegar cada objeto e seus atributos, pode-se percorrer o array como está mostrado abaixo.
         
-    $queryEmp = "INSERT INTO reserva(idUsuario, nome, dataHoraReserva)
-     VALUES ("1", '".$objetos[1]['nome']."', '".$objetos[2]['dataEmp']."')";
+    $queryEmp = "INSERT INTO reserva(idUsuario, dataHoraEmprestimo, 
+    dataHoraDevolucao) VALUES (".$idUsuario.", '".$objetos[0]['dataEmp']."', '".$objetos[0]['dataDev']."')";
     mysqli_query($conexao, $queryEmp);
     $last_id = $conexao->insert_id;
     $rows = mysqli_affected_rows($conexao);
@@ -23,7 +23,7 @@ include_once("conexao.php");
     }
 
     foreach($objetos as $obj) { 
-        $queryEmp = "INSERT INTO objetoreserva(idEmprestimo, idObjeto) VALUES ($last_id, ".$obj['idObj'].")";
+        $queryEmp = "INSERT INTO objetoreserva(idUsuario, idObjeto) VALUES ($last_id, ".$obj['idObj'].")";
         mysqli_query($conexao, $queryEmp);
         $linhas = mysqli_affected_rows($conexao);
 

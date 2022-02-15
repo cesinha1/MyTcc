@@ -282,6 +282,44 @@ label {
 	font-size: 25px;
 
 }
+.modal-style1 {
+    color: #595959;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+}
+.modal-style2 {
+    color: #545454;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.btn-sucesso {
+    width: 40%;
+    padding: 10px 17.6px;
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1em;
+}
+.btn-cancelar {
+    width: 30%;
+    border-radius: 5px;
+    padding: 10px 17.6px;
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color: rgb(221, 51, 51);
+    color: #fff;
+    font-size: 1em;
+}
 @media(max-width: 1200px){
 	.box-principal {
 	width: 70%;
@@ -411,22 +449,51 @@ label {
 
 <div id="myModal1" class="modal1">
 	<div class="modal-content1">
-		<div class="alert alert-success" role="alert">
-  			 <p id="conteudo-modal-sucesso"></p>
-  		</div>
-		<button type="button" class="btn btn-success" onclick="closeModal1()">Entrar</button>
+		<div>
+			<center><img src="img/check.png"></center>
+			<p class="modal-style1" id="conteudo-modal-sucesso"></p>
+		     <p class="modal-style2">Usuário cadastrado com sucesso!</p>
+  			
+		</div>
+		<center><button type="button" class="btn-sucesso" onclick="closeModal1()">Logar</button>
+			<button type="button" class="btn-cancelar" onclick="closeModal2()">Cancelar</button></center>
 	</div>
 </div>
 
 <div id="myModal2" class="modal2">
 	<div class="modal-content2">
-		<div class="alert alert-danger" role="alert">
-  			<p id="conteudo-modal-erro"></p>
-  			Usuário já existe!
-		</div>
-		<button type="button" class="btn btn-danger" onclick="closeModal2()">Tentar Novamente</button>
-	</div>
+		<center><img src="img/xcancel.png"></center>
+	     <p class="modal-style1">Usuário já existe!</p>
+	     <p class="modal-style2" id="conteudo-modal-erro"></p>
+	     <center><button type="button" class="btn-cancelar" onclick="closeModal1()">Tente Novamente</button></center>
+      </div>
 </div>
+
+
+
+
+<div id="myModal1" class="modal1">
+	<div class="modal-content1">
+	  <div>
+		     <center><img src="img/check.png"></center>
+		  <p class="modal-style1" id="conteudo-modal-sucesso"></p>
+		     <p class="modal-style2">Deseja cadastrar outro objeto?</p>
+	     </div>
+	  <center><button type="button" class="btn-sucesso" onclick="closeModal1()">Sim, cadastrar!</button>
+	     <button type="button" class="btn-cancelar" onclick="closeModal2()">Cancelar</button></center>
+      </div>
+</div>
+
+<div id="myModal2" class="modal2">
+	<div class="modal-content2">
+		<center><img src="img/xcancel.png"></center>
+	     <p class="modal-style1">Ops! Objeto já cadastrado</p>
+	     <p class="modal-style2" id="conteudo-modal-erro"></p>
+	     <center><button type="button" class="btn-cancelar" onclick="closeModal1()">Tente Novamente</button></center>
+      </div>
+</div>
+
+
 
 
 

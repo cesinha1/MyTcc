@@ -148,7 +148,7 @@ body, ul {
 
 
   .box-principal{
-		padding: 0px 20px 20px 20px;
+		padding: 20px 20px 20px 20px;
         border: 1px solid #C4C4C4;
         border-radius: 5px;
         width: 100%;
@@ -263,6 +263,13 @@ body, ul {
  
   
 }
+.alinha-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 191px);
+}
+
 
 @media(max-width: 1000px){
   .menu-flutuante a{
@@ -272,6 +279,21 @@ body, ul {
   .sistema{
     font-size: 20px;
   }
+  
+  
+
+}
+@media(max-width: 1100px){
+  .box-principal {
+   
+    width: 90%;
+   
+  }
+  .alinha-div {
+    height: 140vh;
+  }
+  
+  
 
 }
 </style>
@@ -300,12 +322,12 @@ body, ul {
           <li><a href=""><i class="fa fa-money"></i> Empréstimos</a>
             <ul>
               <li><a href="emprestimousuario.php">Realizar Empréstimo</a></li>
-              <li><a href="">Listar Empréstimos</a></li>
+              <li><a href="lista_emprestimo.php">Listar Empréstimos</a></li>
             </ul>
           </li>
           <li><a href=""><i class="fa fa-window-restore" aria-hidden="true"></i> Devoluções</a>
             <ul>
-              <li><a href="">Realizar Devoluções</a></li>
+              <li><a href="devolucao.php">Realizar Devoluções</a></li>
               <li><a href="">Listar Devoluções</a></li>
             </ul>
           </li>
@@ -313,8 +335,10 @@ body, ul {
       </ul>
     </nav>
 
-
+<div class="alinha-div">
+  
 <div class="box-principal">
+<center><img src="./img/cabeçalho.png"></center>
     <div class="ident-user">
 		<div class="space-names">Nome do usuário:
     <?php
@@ -386,6 +410,7 @@ body, ul {
 
       </div>
 
+</div>
 </div>
 </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
