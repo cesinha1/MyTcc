@@ -293,7 +293,7 @@ section {
     <p class="modal-style1">Tem certeza?</p>
     <p class="modal-style2">Você não poderá reverter isso!</p>
       <form action="processa_devolver.php" method="POST" id="validacao1">
-        <input type="text" name="idEmprestimo" value="<?php echo "$idEmprestimo"; ?>" id="idEmp">
+        <input type="text" name="idEmprestimo" style="display: none;" value="<?php echo "$idEmprestimo"; ?>" id="idEmp">
         <center><button type="submit" name="devolver" class="btn-sucesso">Sim, exclua!</button>
         <button class="btn-cancelar" onclick="closeModalFechar()">Cancelar</button></center>
       </form>

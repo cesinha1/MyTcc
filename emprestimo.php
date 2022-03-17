@@ -20,226 +20,209 @@ body, ul {
   font-family: 'Roboto', sans-serif;
   list-style-type: none;
 }
-  .btn-fundo{
-    color: white;
-    text-decoration: none;
-    font-family: sans-serif;
-  }
-
-  #header{
-    width: 100%;
-    height: 120px;
-    box-shadow: 0px 5px 4px #E4E4E4;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #FFFFFF;
-  }
-  #menu{
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-    font-size: 20px;
-    margin-right: 40px;
-  }
-  #menu a {
-    display:  block;
-    padding: .5rem;
-  }
-
-  .sistema{
-    font-size: 24px;
-    color: #25A25A;
-    margin-left: 40px;
-    margin-top: 15px;
-  }
-  #edit-botao {
-    width: 80px;
-    padding: 5px 10px 5px 10px;
-    background: #F5F7F9;
-    box-shadow: 0px 2px 4px #C4C4C4;
-    border-radius: 7px;
-    margin-top: 5px;
-  }
-  .box-lista{
-    font-size: 20px;
-    margin-top: 45px;
-    margin-right: 40px;
-  }
-  .box-lista ul{
-    list-style-type: none;
-  }
-  .box-lista ul li{
-    display: inline;
-    padding-left: 25px;
-  }
-  .sair{
-    color: #25A25A;
-  }
-  a:link {
-    text-decoration: none;
-  }
-  .sair:hover {
-    color: #8A8080;
-  }
-  .menu-flutuante {
-      width: 100%;
-      height: 71px;
-      background: #25A25A;
-      font-size: 25px;
-      padding: 10px 0px 0px 0px;
-    }
-    .menu-flutuante ul {
-      list-style: none;
-      position: relative;
-      margin-left: 20px;
-    }
-    .menu-flutuante ul li {
-      margin-right: 10px;
-      float: left;
-    }
-    .menu-flutuante a {
-      padding: 7px;
-      display: block;
-      text-decoration: none;
-      text-align: center;
-      color: #fff;
-      border-radius: 10px;
-    }
-    .menu-flutuante ul ul {
-      position: absolute;
-      visibility: hidden;
-
-    }
-    .menu-flutuante ul li:hover ul {
-      visibility: visible;
-      padding:15px;
-    }
-    .menu-flutuante a:hover {
-      background-color: #f4f4f4;
-      color: green;
-    }
-    .menu-flutuante ul ul li {
-      float: none;
-      border-bottom: solid 1px #ccc;
-
-      border-radius: 15px;
-    }
-    .menu-flutuante ul ul li a {
-      background-color: #25A25A;
-    }
-    .format{
-      color: green;
-    }
-    .rodape {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 30px;
-      background: #25A25A;
-    }
-    .complemento {
-      padding: 0px 0px 0px 70px ;
-      color: #FFFFFF;
-      font-size: 17px;
-      margin-top: 5px;
-    }
-
-
-  .box-principal{
-		padding: 20px 20px 20px 20px;
-        border: 1px solid #C4C4C4;
-        border-radius: 5px;
-        width: 100%;
-        max-width: 1000px;
-        color: #8A8080;
-		box-sizing: border-box;
-    
-	}
-
-	.box-secundary input[type=text], input[type=email], input[type=password] {
-		width: 70%;
-		height: 50px;
-		border-radius: 10px;
-		background: #FFFFFF;
-  
-		margin-top: 5px;
-		outline: 0;
-	}
-	.validation-msg {
-        display: none;
-        color: #E03B3B;
-        font-size: .7em;
-    }
-    label{
-		font-size: 25px;
-		color: black;
-	}
-  .btn-objeto {
-    width: 250px;
-    height: 50px;
-
-    background: #25A25A;
-    color: white;
-    border-radius: 10px;
-
-    margin-top: 5px;
-    outline: 0;
-  }
-  .tabela-descricao {
-
-    font-size: 20px;
-
-  }
-  .btn-table {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .glock {
-     margin:0 1em 0 5;
-     font-size: 20px;
-     color: black;
-
-  }
-  .modal1 {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 30px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0,0.8);
-      cursor: pointer;
-   }
-   .modal-content1 {
-      background-color: #fefefe;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid green;
-      width: 30%;
-      border-radius: 5px;
-   }
-   .link-result {
-     cursor: pointer;
-   }
-   .container {
-
-    display: flex;
-    padding: 10px 220px 5px 0px;
-    box-sizing: border-box;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: red;
-    color: black;
+.btn-fundo {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
 }
-
+#header {
+  width: 100%;
+  height: 120px;
+  box-shadow: 0px 5px 4px #E4E4E4;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+}
+#menu {
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+  font-size: 20px;
+  margin-right: 40px;
+}
+#menu a {
+  display:  block;
+  padding: .5rem;
+}
+.sistema {
+  font-size: 24px;
+  color: #25A25A;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+#edit-botao {
+  width: 80px;
+  padding: 5px 10px 5px 10px;
+  background: #F5F7F9;
+  box-shadow: 0px 2px 4px #C4C4C4;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+.box-lista {
+  font-size: 20px;
+  margin-top: 45px;
+  margin-right: 40px;
+}
+.box-lista ul {
+  list-style-type: none;
+}
+.box-lista ul li {
+  display: inline;
+  padding-left: 25px;
+}
+.sair {
+  color: #25A25A;
+}
+a:link {
+  text-decoration: none;
+}
+.sair:hover {
+  color: #8A8080;
+}
+.menu-flutuante {
+  width: 100%;
+  height: 71px;
+  background: #25A25A;
+  font-size: 25px;
+  padding: 10px 0px 0px 0px;
+}
+.menu-flutuante ul {
+  list-style: none;
+  position: relative;
+  margin-left: 20px;
+}
+.menu-flutuante ul li {
+  margin-right: 10px;
+  float: left;
+}
+.menu-flutuante a {
+  padding: 7px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+.menu-flutuante ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+.menu-flutuante ul li:hover ul {
+  visibility: visible;
+  padding:15px;
+}
+.menu-flutuante a:hover {
+  background-color: #f4f4f4;
+  color: green;
+}
+.menu-flutuante ul ul li {
+  float: none;
+  border-bottom: solid 1px #ccc;
+  border-radius: 15px;
+}
+.menu-flutuante ul ul li a {
+  background-color: #25A25A;
+}
+.format {
+  color: green;
+}
+.rodape {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: #25A25A;
+}
+.complemento {
+  padding: 0px 0px 0px 70px ;
+  color: #FFFFFF;
+  font-size: 17px;
+  margin-top: 5px;
+}
+.box-principal {
+	padding: 20px 20px 20px 20px;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 1000px;
+  color: #8A8080;
+	box-sizing: border-box;  
+}
+.box-secundary input[type=text], input[type=email], input[type=password] {
+	width: 70%;
+	height: 50px;
+	border-radius: 10px;
+	background: #FFFFFF;
+	margin-top: 5px;
+	outline: 0;
+}
+.validation-msg {
+  display: none;
+  color: #E03B3B;
+  font-size: .7em;
+}
+label {
+	font-size: 25px;
+	color: black;
+}
+.btn-objeto {
+  width: 250px;
+  height: 50px;
+  background: #25A25A;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  outline: 0;
+}
+.tabela-descricao {
+  font-size: 20px;
+}
+.btn-table {
+  display: flex;
+  justify-content: flex-end;
+}
+.glock {
+  margin:0 1em 0 5;
+  font-size: 20px;
+  color: black;
+}
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 30px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+.modal-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid green;
+  width: 30%;
+  border-radius: 5px;
+}
+.link-result {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  padding: 10px 220px 5px 0px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: red;
+  color: black;
+}
 .format-livesearch {
-
   width: 678px;
   border-radius: 5px;
 }
@@ -249,19 +232,17 @@ body, ul {
   border-radius: 5px;
   width: 678px;
 }
-.ident-user{
+.ident-user {
   display: flex;
   justify-content: space-around;
   font-size: 20px;
   padding: 20px 10px 20px 10px;
 }
-#center-block{
+#center-block {
   margin: 10% auto;
 }
-.table-alinha{
-  margin-top: 80px;
- 
-  
+.table-alinha {
+  margin-top: 80px; 
 }
 .alinha-div {
   display: flex;
@@ -269,47 +250,36 @@ body, ul {
   align-items: center;
   height: calc(100vh - 191px);
 }
-
-
-@media(max-width: 1000px){
-  .menu-flutuante a{
+@media(max-width: 1000px) {
+  .menu-flutuante a {
     font-size: 20px;
     margin-top: 5px;
   }
-  .sistema{
+  .sistema {
     font-size: 20px;
   }
-  
-  
-
 }
-@media(max-width: 1100px){
+@media(max-width: 1100px) {
   .box-principal {
-   
     width: 90%;
-   
   }
   .alinha-div {
     height: 140vh;
   }
-  
-  
-
 }
 </style>
-	<body>
 
+<body>
     <header id="header">
       <p class="sistema">Sistemas de Empréstimo de Objetos</p>
-        <nav id="nav">
-          <ul id="menu">
-
-            <li><a href="logout_admin.php" id="edit-botao" class="sair">Sair <i class="fa fa-sign-in"></i></a></li>
-          </ul>
-        </nav>
+      <nav id="nav">
+        <ul id="menu">
+          <li><a href="logout_admin.php" id="edit-botao" class="sair">Sair <i class="fa fa-sign-in"></i></a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
     <nav class="menu-flutuante">
       <ul>
           <li><a href="area_admin.php"><i class ="fa fa-home"></i> Home</a></li>
@@ -335,18 +305,16 @@ body, ul {
       </ul>
     </nav>
 
-<div class="alinha-div">
-  
-<div class="box-principal">
-<center><img src="./img/cabeçalho.png"></center>
+<section class="alinha-div">
+  <div class="box-principal">
+    <center><img src="./img/cabeçalho.png"></center>
     <div class="ident-user">
-		<div class="space-names">Nome do usuário:
-    <?php
-      $nome = $_GET['Nome'];
-    echo "<input type='hidden' name='nome' value='$nome'>$nome";
-    echo'</div>';
-
-   echo'<div>Siape/Matrícula:';
+		  <div class="space-names">Nome do usuário:
+        <?php
+        $nome = $_GET['Nome'];
+        echo "<input type='hidden' name='nome' value='$nome'>$nome";
+        echo'</div>';
+        echo'<div>Siape/Matrícula:';
 
 
 
@@ -410,9 +378,9 @@ body, ul {
 
       </div>
 
-</div>
-</div>
-</div>
+    </div>
+  </div>
+</section>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/be8c86c50f.js" crossorigin="anonymous"></script>

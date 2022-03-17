@@ -11,14 +11,13 @@ include_once("conexao.php");
     // pegando os objetos 
     $objetos = $objetoEmpDecode['objetos'];
 
-    // Para pegar cada objeto e seus atributos, pode-se percorrer o array como está mostrado abaixo.
-        
+    // Para pegar cada objeto e seus atributos, pode-se percorrer o array como está mostrado abaixo. 
     $queryEmp = "INSERT INTO emprestimo(idUsuario, dataHoraEmprestimo, 
     dataHoraDevolucao) VALUES (".$idUsuario.", '".$objetos[0]['dataEmp']."', '".$objetos[0]['dataDev']."')";
     mysqli_query($conexao, $queryEmp);
     $last_id = $conexao->insert_id;
     $rows = mysqli_affected_rows($conexao);
-    if ( $rows > 0) {
+    if ($rows > 0) {
         $resultAllQueries = true;
     }
 
@@ -27,14 +26,12 @@ include_once("conexao.php");
         mysqli_query($conexao, $queryEmp);
         $linhas = mysqli_affected_rows($conexao);
 
-        if ($rows > 0) {
+        if($rows > 0) {
             $resultAllQueries = true;
-            
-        } else {
+        }else{
             $resultAllQueries = false;
             break;
         }
-
    } 
      
    if ($resultAllQueries) {

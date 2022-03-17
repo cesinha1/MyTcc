@@ -14,7 +14,7 @@ include_once("conexao.php");
     // Para pegar cada objeto e seus atributos, pode-se percorrer o array como está mostrado abaixo.
         
     $queryEmp = "INSERT INTO reserva(idUsuario, dataHoraEmprestimo, 
-    dataHoraDevolucao) VALUES (".$idUsuario.", '".$objetos[0]['dataEmp']."', '".$objetos[0]['dataDev']."')";
+    dataHoraDevolucao) VALUES (".$idUsuario.", '".$objetos[0]['dataEmp']."')";
     mysqli_query($conexao, $queryEmp);
     $last_id = $conexao->insert_id;
     $rows = mysqli_affected_rows($conexao);
