@@ -329,7 +329,7 @@ border-radius: 5px;
   <label>Objeto</label>
 			<div class="box-pesquisa">
         <div class="box-secundary">
-          <input type="text" id="input-reserva" name="nameobj" autocomplete="off"  onkeyup= "showResult()">
+          <input type="text" id="input-reserva" name="nameobj" autocomplete="off"  onkeyup="showResult()">
         </div>	
         <div>
           <button class="btn-objeto" onclick="addRowTable()">+ Adicionar</button>
